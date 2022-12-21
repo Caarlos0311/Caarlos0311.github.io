@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ISOFT2_2022_ET.ISOFT2_2022_ET.model","l":"Cliente"},{"p":"ISOFT2_2022_ET.ISOFT2_2022_ET","l":"Main"},{"p":"ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions","l":"NumerosValidosException"},{"p":"ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions","l":"SinCuentaException"}];updateSearchResults();
