@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/png" href="img/Logo2.png" sizes="32x32">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +30,7 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Carlos</span>Ordoño</h1>
+            <img class="logo-display" width="121" src="img/Logo1.png" alt="">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -40,36 +40,15 @@
                 <a href="#inicio" class="nav-item nav-link active">Inicio</a>
                 <a href="#sobreMi" class="nav-item nav-link">Sobre mi</a>
                 <a href="#trayectoria" class="nav-item nav-link">Trayectoria</a>
-                <a href="#tecnología" class="nav-item nav-link">Tecnologías</a>
                 <a href="#habilidad" class="nav-item nav-link">Habilidades</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#blog" class="nav-item nav-link">Intereses</a>
                 <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <!--<a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>-->
         </div>
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="inicio" style="min-height: 100vh;">
@@ -84,12 +63,11 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Ingeniero Informático</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="pdf/Curriculum - Carlos Ordoño.pdf" download="Curriculum - Carlos Ordoño.pdf" class="btn btn-outline-light mr-5">Descargar CV</a>
-                        <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                            <span></span>
+                        <!--<a href="pdf/Curriculum - Carlos Ordoño.pdf" download="Curriculum - Carlos Ordoño.pdf" class="btn btn-outline-light mr-5">Descargar CV</a>-->
+                        <button type="button" class="btn-play position-relative" data-toggle="modal" onclick="window.location.href='pdf/Curriculum - Carlos Ordoño.pdf'" style="background-color: transparent;">
+                            <span class="sr-only"></span>
                         </button>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Descargar CV</h5>
                     </div>
                 </div>
             </div>
@@ -122,7 +100,6 @@
                         <div class="col-sm-7 py-2"><h6>Correo: <span class="text-secondary">carlos.ordono.moraleda@gmail.com</span></h6></div>
                     </div>
                     <a href="pdf/Curriculum - Carlos Ordoño.pdf" download="Curriculum - Carlos Ordoño.pdf" class="btn btn-outline-primary mr-4">Descargar CV</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -331,21 +308,22 @@
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Escritorio</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Web</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Juego</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">Gestor</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/IPOkemon.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/IPO2-Pokemon" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">IPOkemon</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">IPOkemon</h5>
                         </div>
                     </div>
                 </div>
@@ -354,9 +332,9 @@
                         <img class="img-fluid rounded w-100" src="img/SoundBlow.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/HrnyGranny/GSI-SoundBlow" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">SoundBlow</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">SoundBlow</h5>
                         </div>
                     </div>
                 </div>
@@ -365,20 +343,20 @@
                         <img class="img-fluid rounded w-100" src="img/NBA-Analyzer.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/NBA-Analyzer" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">NBA-Analyzer</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">NBA-Analyzer</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/SantaClausRun.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/Multimedia-SantaClaus" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">Santa Claus Run</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">Santa Claus Run</h5>
                         </div>
                     </div>
                 </div>
@@ -387,20 +365,20 @@
                         <img class="img-fluid rounded w-100" src="img/ProtectoraIPO.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/ProtectoraIPO" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">ProtectoraIPO</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">ProtectoraIPO</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/Pilgrimfy.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/AgustinESI/ISOFT2-2022-C02" target="_blank">
-                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                                <i class="fab fa-github text-custom-color" style="font-size: 40px;"></i>
                             </a>
-                            <h5 class="font-weight-bold text-white mb-1">Pilgrimfy</h5>
+                            <h5 class="font-weight-bold text-custom-color mb-1">Pilgrimfy</h5>
                         </div>
                     </div>
                 </div>
@@ -508,10 +486,10 @@
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://github.com/Caarlos0311" target="_blank"><i class="fab fa-github"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/carlos-ordo%C3%B1o-moraleda/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <p class="m-0">&copy; 2023 <a class="text-white font-weight-bold" href="#">Carlos Ordoño Moraleda</a>. All Rights Reserved.</p>
         </div>
