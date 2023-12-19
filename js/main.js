@@ -112,6 +112,27 @@
         loop: true,
         items: 1
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const infoBtn = document.getElementById('infoBtn');
+        const infoWindow = document.getElementById('infoWindow');
+      
+        infoBtn.addEventListener('click', function (event) {
+          event.preventDefault();
+          infoWindow.style.right = '0';
+          document.addEventListener('click', closeInfoWindow);
+        });
+      
+        function closeInfoWindow(event) {
+          if (!infoWindow.contains(event.target) && event.target !== infoBtn) {
+            infoWindow.style.right = '-300px';
+            document.removeEventListener('click', closeInfoWindow);
+          }
+        }
+      });
+      
+      
     
 })(jQuery);
 
