@@ -1,2 +1,5 @@
+Sitemap: https://caarlos0311.github.io/sitemap.xml
+
 User-agent: *
-Disallow:
+Disallow: /css/
+Disallow: /js/
