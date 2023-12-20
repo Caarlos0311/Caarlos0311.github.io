@@ -7642,10 +7642,6 @@ button.bg-dark:focus {
   margin-bottom: 0.5rem !important;
 }
 
-.mb-2 small {
-  color: #BECFDF
-}
-
 .ml-2,
 .mx-2 {
   margin-left: 0.5rem !important;
@@ -10041,6 +10037,11 @@ button {
   padding: 10px;
   margin-bottom: 30px;
   color: #2F4A69;
+}
+
+.sobre-mi {
+  font-size: 1rem;
+  font-weight: 400 !important;
 }
 
 
