@@ -158,7 +158,6 @@ a {
 }
 
 a:hover {
-  color: #078571;
   text-decoration: underline;
 }
 
@@ -2928,7 +2927,6 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #078571;
   text-decoration: underline;
 }
 
@@ -4748,7 +4746,6 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #078571;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -10025,6 +10022,27 @@ button {
 #closeBtn:hover {
   background-color: #c0392b;
 }
+
+.enlace-negrita {
+  font-weight: bold;
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.enlace {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.title {
+  display: inline-block;
+  font-size: 2em;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #2F4A69;
+}
+
+
 
 
 
