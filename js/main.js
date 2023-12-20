@@ -93,6 +93,27 @@
         loop: true,
         items: 1
     });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = document.querySelectorAll('.lazy');
+
+        var lazyLoad = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            var lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove('lazy');
+            lazyLoad.unobserve(lazyImage);
+            }
+        });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+        lazyLoad.observe(lazyImage);
+        });
+    });
+
     
 })(jQuery);
 
