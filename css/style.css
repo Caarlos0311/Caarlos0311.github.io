@@ -10036,7 +10036,8 @@ button {
 
 .title {
   display: inline-block;
-  font-size: 2em;
+  font-size: 2.5rem;
+  font-weight: 900 !important;
   padding: 10px;
   margin-bottom: 30px;
   color: #2F4A69;

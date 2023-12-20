@@ -28,6 +28,29 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Metadatos Open Graph para Facebook -->
+    <meta property="og:title" content="Carlos Ordoño Moraleda">
+    <meta property="og:description" content="Página Web de Carlos Ordoño Moraleda, estudiante de Ingeniería Informática en Ciudad Real. Aquí podrás encontrar información sobre mis habilidades técnicas o sobre mis aptitudes. También podrás conocer un poco más sobre mí.">
+    <meta property="og:url" content="https://caarlos0311.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Metadatos para Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Carlos Ordoño Moraleda">
+    <meta name="twitter:description" content="Página Web de Carlos Ordoño Moraleda, estudiante de Ingeniería Informática en Ciudad Real. Aquí podrás encontrar información sobre mis habilidades técnicas o sobre mis aptitudes. También podrás conocer un poco más sobre mí.">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Carlos Ordoño",
+            "email": "carlos.ordono.moraleda@gmail.com",
+            "telephone": "+34616123280"
+        }
+    </script>
+
+    <link rel="canonical" href="https://caarlos0311.github.io/">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/Logo2.png" sizes="32x32">
 
@@ -55,7 +78,7 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <img class="logo-display" width="121" src="img/Logo1.png" alt="">
+            <img class="logo-display" width="121" src="img/Logo1.png" alt="logo">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -128,17 +151,17 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/perfil.webp" alt="">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/perfil.webp" alt="fotoProfesional">
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">Soy</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Carlos Ordoño</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <h2 class="typed-text-output d-inline font-weight-lighter text-white"></h2>
                     <div class="typed-text d-none">Ingeniero Informático</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="pdf/Curriculum - Carlos Ordoño.pdf" download="Curriculum - Carlos Ordoño.pdf" class="btn btn-outline-light mr-5">Descargar CV</a>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
     </div>         
@@ -149,11 +172,11 @@
     <div class="container-fluid py-5" id="sobreMi">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Sobre mi</h1>
+                <h2 class="display-4 text-uppercase title">Sobre mi</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/perfil.webp" alt="">
+                    <img class="img-fluid rounded w-100" src="img/perfil.webp" alt="fotoPersonal">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Estudiante de Ingeniería Informática</h3>
@@ -178,7 +201,7 @@
     <div class="container-fluid py-5" id="trayectoria">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Formación</h1>
+                <h2 class="display-4 text-uppercase title">Formación</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -214,12 +237,11 @@
     <div class="container-fluid pt-5" id="habilidad">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Habilidades</h1>
+                <h2 class="display-4 text-uppercase title">Habilidades</h2>
             </div>
             <div class="position-relative d-flex align-items-center justify-content-center" style="margin-bottom: 10px;">
                 <h2 class="position-relative text-uppercase text-primary">Habilidades Técnicas</h2>
             </div>
-            
             <div class="position-relative d-flex align-items-center justify-content-center" style="margin-bottom: 10px;">
                 <h3 class="position-relative text-uppercase text-primary">- Tecnologías -</h3>
             </div>
@@ -332,7 +354,7 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Portfolio</h1>
+                <h2 class="display-4 text-uppercase title">Portfolio</h2>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -348,7 +370,7 @@
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/ipokemon.webp" alt="">
+                        <img class="img-fluid rounded w-100" src="img/ipokemon.webp" alt="ipokemon">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/IPO2-Pokemon" target="_blank">
                                 <i class="fab fa-github text-custom-color" style="font-size: 30px;"></i>
@@ -359,7 +381,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/soundblow.webp" alt="">
+                        <img class="img-fluid rounded w-100" src="img/soundblow.webp" alt="soundBlow">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/HrnyGranny/GSI-SoundBlow" target="_blank">
                                 <i class="fab fa-github text-custom-color" style="font-size: 30px;"></i>
@@ -370,7 +392,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/nba-analyzer.webp" alt="">
+                        <img class="img-fluid rounded w-100" src="img/nba-analyzer.webp" alt="nbaAnalyzer">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/NBA-Analyzer" target="_blank">
                                 <i class="fab fa-github text-custom-color" style="font-size: 30px;"></i>
@@ -381,7 +403,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/santaclausrun.webp" alt="">
+                        <img class="img-fluid rounded w-100" src="img/santaclausrun.webp" alt="santaRun">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/Caarlos0311/Multimedia-SantaClaus" target="_blank">
                                 <i class="fab fa-github text-custom-color" style="font-size: 30px;"></i>
@@ -403,7 +425,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/pilgrimfy.webp" alt="">
+                        <img class="img-fluid rounded w-100" src="img/pilgrimfy.webp" alt="pilgrimfy">
                         <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-center text-center">
                             <a href="https://github.com/AgustinESI/ISOFT2-2022-C02" target="_blank">
                                 <i class="fab fa-github text-custom-color" style="font-size: 30px;"></i>
@@ -422,7 +444,7 @@
     <div class="container-fluid pt-5" id="blog">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Intereses</h1>
+                <h2 class="display-4 text-uppercase title">Intereses</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -474,7 +496,7 @@
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-4 text-uppercase title">Contacto</h1>
+                <h2 class="display-4 text-uppercase title">Contacto</h2>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 col-md-6 text-center mb-5">
