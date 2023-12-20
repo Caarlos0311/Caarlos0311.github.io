@@ -40,25 +40,6 @@
         });
     }
 
-
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
-
     // Scroll to Bottom
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -112,27 +93,6 @@
         loop: true,
         items: 1
     });
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const infoBtn = document.getElementById('infoBtn');
-        const infoWindow = document.getElementById('infoWindow');
-      
-        infoBtn.addEventListener('click', function (event) {
-          event.preventDefault();
-          infoWindow.style.right = '0';
-          document.addEventListener('click', closeInfoWindow);
-        });
-      
-        function closeInfoWindow(event) {
-          if (!infoWindow.contains(event.target) && event.target !== infoBtn) {
-            infoWindow.style.right = '-300px';
-            document.removeEventListener('click', closeInfoWindow);
-          }
-        }
-      });
-      
-      
     
 })(jQuery);
 
