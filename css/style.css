@@ -10044,7 +10044,9 @@ button {
   font-weight: 400 !important;
 }
 
-
+.container_but {
+  text-align: center; 
+}
 
 
 
